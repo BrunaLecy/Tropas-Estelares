@@ -1,7 +1,4 @@
-<%@ taglib prefix="f"  uri="http://java.sun.com/jsf/core"%>
-<%@ taglib prefix="h"  uri="http://java.sun.com/jsf/html"%>
-<%@ taglib uri="http://richfaces.org/a4j" prefix="a4j" %>
-<%@ taglib uri="http://richfaces.org/rich" prefix="rich" %>
+
 
 <a4j:form id="formEvento">
 
@@ -20,10 +17,10 @@
 			<td colspan="4"><rich:message for="categoria" ajaxRendered="true" style="color:red;"/></td>
 		</tr>
 		<tr>
-			<td style="text-align:right"><label for="descricao" >Descrição: </label></td>
+			<td style="text-align:right"><label for="descricao" >DescriÃ§Ã£o: </label></td>
 			<td style="text-align:left" colspan="3">
 				<h:inputText id="descricao" styleClass="input-text" value="#{evento.descricao}" required="true"
-							 requiredMessage="Especifique uma descrição para o Evento.">
+							 requiredMessage="Especifique uma descriÃ§Ã£o para o Evento.">
 				</h:inputText>
 			</td>
 		</tr>
@@ -44,8 +41,8 @@
 			<td width="80px" style="text-align:left">
 				<h:inputText id="valor" styleClass="input-text" value="#{evento.valor}" required="true"
 							 requiredMessage="Especifique o valor individual do Bilhete para o Evento."
-							 validatorMessage="Especifique um valor válido (exemplo: 50,33)."
-							 converterMessage="Especifique um valor válido (exemplo: 50,33).">
+							 validatorMessage="Especifique um valor vÃ¡lido (exemplo: 50,33)."
+							 converterMessage="Especifique um valor vÃ¡lido (exemplo: 50,33).">
 					<f:convertNumber type="number" />
 					<f:validateDoubleRange minimum="0.0" />
 				</h:inputText>
@@ -61,19 +58,19 @@
 			<td style="text-align:right"><label for="capacidade" >Capacidade: </label></td>
 			<td style="text-align:left">
 				<h:inputText id="capacidade" styleClass="input-text" value="#{evento.capacidade}" required="true"
-							 requiredMessage="Especifique a capacidade (lotação) máxima para o Evento."
-							 validatorMessage="Especifique uma capacidade válida (exemplo: 150)."
-							 converterMessage="Especifique uma capacidade válida (exemplo: 150).">
+							 requiredMessage="Especifique a capacidade (lotaÃ§Ã£o) mÃ¡xima para o Evento."
+							 validatorMessage="Especifique uma capacidade vÃ¡lida (exemplo: 150)."
+							 converterMessage="Especifique uma capacidade vÃ¡lida (exemplo: 150).">
 					<f:convertNumber integerOnly="true" />
 					<f:validateLongRange minimum="0" />
 				</h:inputText>
 			</td>
-			<td style="text-align:right"><label for="etaria" >Class. Etária: </label></td>
+			<td style="text-align:right"><label for="etaria" >Class. EtÃ¡ria: </label></td>
 			<td style="text-align:left">
 				<h:inputText id="etaria" styleClass="input-text" value="#{evento.classificacaoEtaria}" required="true"
-							 requiredMessage="Especifique a classificação etária (0 = livre)."
-							 validatorMessage='Especifique uma class. etária válida (exemplo: 18, ou 0 para "livre").'
-							 converterMessage='Especifique uma class. etária válida (exemplo: 18, ou 0 para "livre").'>
+							 requiredMessage="Especifique a classificaÃ§Ã£o etÃ¡ria (0 = livre)."
+							 validatorMessage='Especifique uma class. etÃ¡ria vÃ¡lida (exemplo: 18, ou 0 para "livre").'
+							 converterMessage='Especifique uma class. etÃ¡ria vÃ¡lida (exemplo: 18, ou 0 para "livre").'>
 					<f:convertNumber integerOnly="true" />
 					<f:validateLongRange minimum="0" />
 				</h:inputText>
@@ -114,8 +111,8 @@
 		<f:facet name="header"><h:outputText value="Valor"/></f:facet>
 		<h:outputText value="#{eventoItem.valor}"><f:convertNumber type="currency" /></h:outputText>
 	</rich:column>
-	<rich:column id="colEtaria" width="60px" label="Classificação Etária" sortable="true" sortBy="#{eventoItem.classificacaoEtaria}">
-		<f:facet name="header"><h:outputText value="C.Etária"/></f:facet>
+	<rich:column id="colEtaria" width="60px" label="ClassificaÃ§Ã£o EtÃ¡ria" sortable="true" sortBy="#{eventoItem.classificacaoEtaria}">
+		<f:facet name="header"><h:outputText value="C.EtÃ¡ria"/></f:facet>
 		<h:outputText value="#{(eventoItem.classificacaoEtaria != 0)?eventoItem.classificacaoEtaria:'Livre'}"></h:outputText>
 	</rich:column>
 	<rich:column width="60px" label="Remover" sortable="false">
