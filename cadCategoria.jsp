@@ -1,17 +1,16 @@
 <%@ taglib prefix="f"  uri="http://java.sun.com/jsf/core"%>
 <%@ taglib prefix="h"  uri="http://java.sun.com/jsf/html"%>
-<%@ taglib uri="http://richfaces.org/a4j" prefix="a4j" %>
-<%@ taglib uri="http://richfaces.org/rich" prefix="rich" %>
+
 
 <a4j:form id="formCategoria">
 
 <rich:panel header="Adicionar Categoria" style="width:400px">
 	<table width="100%" cellspacing="6">
 		<tr>
-			<td width="60px" style="text-align:right"><label for="descricao" >Descrição: </label></td>
+			<td width="60px" style="text-align:right"><label for="descricao" >DescriÃ§Ã£o: </label></td>
 			<td style="text-align:left">
 				<h:inputText id="descricao" styleClass="input-text" value="#{categoria.descricao}" required="true"
-							 requiredMessage="Especifique uma descrição para a Categoria.">
+							 requiredMessage="Especifique uma descriÃ§Ã£o para a Categoria.">
 				</h:inputText>
 			</td>
 		</tr>
