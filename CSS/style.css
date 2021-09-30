@@ -1,0 +1,90 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 24px;
+  margin-left: 215px;
+  padding-top: 15px;
+}
+
+h2{
+  font-size: 21px;
+}
+
+.textbody{
+  font-size: 16px;
+  color: #3D3E42;
+  margin-left: 215px;
+}
+
+.topnav {
+  background-color: #2F7B93;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right: 215px;
+  margin-left: 215px;
+}
+
+.topnav a {
+  color: #FFFFFF;
+  float: left;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  padding: 14px 16px;
+  text-align: center;
+} 
+
+.topnav a:hover{
+  background-color: #7A9AA5;
+  border-radius: 4px;  
+}
+
+.topnav a.active {
+  background-color: #21596A;
+  text-decoration: none;
+  border-radius: 4px; 
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  width: 400px;
+  transition: all 0.3s ease-out;
+}
+
+.card a {
+  color: #b3404a;
+  font-weight: bold;
+
+}
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+ 
+.card p {
+  color: #a3a5ae;
+  font-size: 16px;
+}
+ 
+/*.image {
+  position: relative;
+  max-width: 64px;
+  max-height: 64px;
+}*/
+
+.blue {
+  border-left: 3px solid #2F7B93;
+}
