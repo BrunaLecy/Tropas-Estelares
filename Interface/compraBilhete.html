@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>     
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet"/>
+        <script type="text/javascript" src="JavaScript/meu-arquivo.js"></script>
+        <title>Comprar bilhete</title>
+    </head>
+
+    <body >
+            <fieldset class="area"> 
+
+                <div class="topnav">
+                    <a href="index.html">Início</a>
+                    <a href="fazerLogin.html">Fazer Login</a>
+                </div>
+
+                <h1>Comprar bilhete: O fantasma da Ópera</h1>
+
+                <form class="form" action="/action_page.php">
+                    <p>Selecione o horário desejado:</p>
+                        <input type="radio" id="horario" name="fav_language" value="Horario">
+                        <label for="horario">18:00</label><br>
+                        <input type="radio" id="horario" name="fav_language" value="Horario">
+                        <label for="horario">19:00</label><br>
+                        <input type="radio" id="horario" name="fav_language" value="Horario">
+                        <label for="horario">20:00</label><br>
+                        <input type="radio" id="horario" name="fav_language" value="Horario">
+                        <label for="horario">21:00</label><br> <br>
+
+                    <p> Selecione o assento: <br>
+                        <select class="select" required>
+                            <option value=""> </option>
+                            <option value="a1">A1</option>
+                            <option value="a2">A2</option>
+                            <option value="a3">A3</option>
+                            <option value="b1">B1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c1">C1</option>
+                            <option value="c2">C2</option>
+                            <option value="c3">C3</option>
+                        </select> <br> <br> <br> 
+
+                    <input class="button-1" type="reset" value="Comprar">
+
+                </form> 
+            </fieldset>
+    </body>
