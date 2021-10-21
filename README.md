@@ -1,6 +1,5 @@
 # Vendas de Bilhetes Web
 
-
 //Enunciado
 * O projeto consiste no desenvolvimento de uma aplicação para venda de bilhete para Eventos Culturais.
 
