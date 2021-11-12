@@ -10,9 +10,9 @@ Nota.... 2.0 pts
 
 T-02 ( 2.0 pontos )
 
-Nota: 0.0 pts
+Nota: 1.0 pts
 
-Não recebi os arquivos
+Os diagrams ( tanto físico, como lógico ) poderiam conter mais detalhes das implementações
 
 ============================================================================================================================================
 
@@ -24,10 +24,9 @@ Nota: 2.0 pts
 
 T-04 ( 2.0 pontos )
 
-Nota: 0.5 pts
+Nota: 1.25 pts
 
 Faltou entrengar a descricao dos 3 casos de uso
-Faltou entregar o diagrama de sequencia dos 3 casos de uso
 ============================================================================================================================================
 
 
